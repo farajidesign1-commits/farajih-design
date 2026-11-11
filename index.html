@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>Farajih Designer | Creative Designer</title>
+
+    <meta
+      name="description"
+      content="Farajih Designer - Graphic Designer and Front-End Web Developer creating impactful brand identities and digital experiences."
+    />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css?v=3" />
+  </head>
+
+  <body>
+    <!-- =================================
+         NAVBAR
+    ================================== -->
+
+    <header class="header" id="header">
+      <nav class="navbar">
+        <!-- LOGO -->
+        <a href="#home" class="logo">
+          <img src="assets/images/logo.png" alt="Farajih Designer Logo" />
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- NAVIGATION PILL -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#services">SERVICE</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- =================================
+         MAIN WEBSITE
+    ================================== -->
+
+    <main>
+      <!-- =================================
+             HERO SECTION
+        ================================== -->
+
+      <section class="hero" id="home">
+        <!-- BACKGROUND SLIDER -->
+        <div class="hero-slider">
+          <div class="hero-slide active">
+            <img
+              src="assets/images/hero-1.webp"
+              alt="Farajih Designer creative workspace"
+            />
+          </div>
+
+          <div class="hero-slide">
+            <img
+              src="assets/images/hero-2.webp"
+              alt="Farajih Designer graphic design work"
+            />
+          </div>
+
+          <div class="hero-slide">
+            <img
+              src="assets/images/hero-3.webp"
+              alt="Farajih Designer digital creative work"
+            />
+          </div>
+        </div>
+
+        <!-- IMAGE OVERLAY -->
+        <div class="hero-overlay"></div>
+
+        <!-- HERO CONTENT -->
+        <div class="hero-content">
+          <div class="hero-count">
+            <span id="current-slide">01</span>
+            <span>/ 03</span>
+          </div>
+
+          <p class="hero-category">GRAPHIC DESIGNER</p>
+
+          <h1>
+            Creative Design<br />
+            That Builds Brands.
+          </h1>
+
+          <p class="hero-description">
+            Visual identities and digital experiences designed to make brands
+            memorable.
+          </p>
+        </div>
+
+        <!-- SLIDER CONTROLS -->
+        <div class="hero-controls">
+          <button
+            type="button"
+            id="hero-prev"
+            class="slider-arrow"
+            aria-label="Previous image"
+          >
+            &#8592;
+          </button>
+
+          <button
+            type="button"
+            class="slider-dot active"
+            data-slide="0"
+            aria-label="Go to slide 1"
+          >
+            01
+          </button>
+
+          <button
+            type="button"
+            class="slider-dot"
+            data-slide="1"
+            aria-label="Go to slide 2"
+          >
+            02
+          </button>
+
+          <button
+            type="button"
+            class="slider-dot"
+            data-slide="2"
+            aria-label="Go to slide 3"
+          >
+            03
+          </button>
+
+          <button
+            type="button"
+            id="hero-next"
+            class="slider-arrow"
+            aria-label="Next image"
+          >
+            &#8594;
+          </button>
+        </div>
+
+        <!-- SLIDER PROGRESS -->
+        <div class="hero-progress">
+          <span id="hero-progress-bar"></span>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="about section" id="about">
+        <div class="about-layout">
+          <!-- PROFILE IMAGE -->
+          <div class="about-image" data-reveal-image>
+            <div class="about-image-frame">
+              <img src="assets/images/about.webp" alt="Farajih Designer" />
+            </div>
+          </div>
+
+          <!-- ABOUT CONTENT -->
+          <div class="about-content" data-reveal-about>
+            <div class="about-heading">
+              <span class="about-label">ABOUT</span>
+              <span class="about-label-line"></span>
+            </div>
+
+            <h2>
+              Turning Ideas Into
+              <span>Creative Reality.</span>
+            </h2>
+
+            <p>
+              Creative Graphic Designer and full stack developer with 8+ years
+              of experience delivering impactful brand identities, responsive
+              websites,software, and digital marketing materials. Passionate
+              about creating clean, functional, and visually engaging designs
+              that strengthen brands, improve user experience, and support
+              business growth.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-item">
+                <h3><span class="counter" data-target="8">0</span>+</h3>
+                <p>Years Experience</p>
+              </div>
+
+              <div class="stat-item">
+                <h3><span class="counter" data-target="100">0</span>+</h3>
+                <p>Projects Completed</p>
+              </div>
+            </div>
+
+            <a href="#contact" class="about-btn">
+              LET'S WORK TOGETHER
+              <span>↗</span>
+            </a>
+          </div>
+
+          <!-- SKILLS -->
+          <div class="about-skills" data-reveal-skills>
+            <h2>SKILLS</h2>
+
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-name">Javascript</div>
+                <div class="skill-value">
+                  <span class="counter" data-target="85">0</span>%
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-name">HTML</div>
+                <div class="skill-value">
+                  <span class="counter" data-target="85">0</span>%
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-name">CSS</div>
+                <div class="skill-value">
+                  <span class="counter" data-target="95">0</span>%
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-name">Adobe Suite</div>
+                <div class="skill-value">
+                  <span class="counter" data-target="85">0</span>%
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-name">Videographer</div>
+                <div class="skill-value">
+                  <span class="counter" data-target="70">0</span>%
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-name">Software DLP</div>
+                <div class="skill-value">
+                  <span class="counter" data-target="65">0</span>%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section class="services section" id="service">
+        <div class="services-container">
+          <div class="services-heading">
+            <h2>SERVICE <span></span></h2>
+          </div>
+
+          <div class="services-grid">
+            <!-- SERVICE 01 -->
+            <article
+              class="service-card"
+              tabindex="0"
+              role="button"
+              aria-expanded="false"
+            >
+              <div class="service-card-inner">
+                <div class="service-front">
+                  <span class="service-number">01</span>
+                  <span class="service-explore">EXPLORE SERVICE ↗</span>
+                </div>
+
+                <div class="service-back">
+                  <span class="service-number">01</span>
+                  <h3>Brand Identity & Graphic Design</h3>
+                  <p>
+                    Creating unique logos, brand identities, business cards,
+                    brochures, flyers, and professional marketing materials that
+                    make your brand stand out.
+                  </p>
+                  <span class="service-arrow">↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- SERVICE 02 -->
+            <article
+              class="service-card"
+              tabindex="0"
+              role="button"
+              aria-expanded="false"
+            >
+              <div class="service-card-inner">
+                <div class="service-front">
+                  <span class="service-number">02</span>
+                  <span class="service-explore">EXPLORE SERVICE ↗</span>
+                </div>
+
+                <div class="service-back">
+                  <span class="service-number">02</span>
+                  <h3>Website Design & Development</h3>
+                  <p>
+                    Designing and developing modern, responsive, and
+                    user-friendly websites that deliver seamless experiences
+                    across desktop, tablet, and mobile devices.
+                  </p>
+                  <span class="service-arrow">↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- SERVICE 03 -->
+            <article
+              class="service-card"
+              tabindex="0"
+              role="button"
+              aria-expanded="false"
+            >
+              <div class="service-card-inner">
+                <div class="service-front">
+                  <span class="service-number">03</span>
+                  <span class="service-explore">EXPLORE SERVICE ↗</span>
+                </div>
+
+                <div class="service-back">
+                  <span class="service-number">03</span>
+                  <h3>Full Stack Web Applications</h3>
+                  <p>
+                    Building powerful web applications, custom management
+                    systems, dashboards, and database-driven solutions tailored
+                    to business needs.
+                  </p>
+                  <span class="service-arrow">↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- SERVICE 04 -->
+            <article
+              class="service-card"
+              tabindex="0"
+              role="button"
+              aria-expanded="false"
+            >
+              <div class="service-card-inner">
+                <div class="service-front">
+                  <span class="service-number">04</span>
+                  <span class="service-explore">EXPLORE SERVICE ↗</span>
+                </div>
+
+                <div class="service-back">
+                  <span class="service-number">04</span>
+                  <h3>Digital Marketing & Social Media Design</h3>
+                  <p>
+                    Creating engaging social media graphics, advertising
+                    creatives, promotional campaigns, and digital content that
+                    attract audiences and strengthen brand visibility.
+                  </p>
+                  <span class="service-arrow">↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- SERVICE 05 -->
+            <article
+              class="service-card"
+              tabindex="0"
+              role="button"
+              aria-expanded="false"
+            >
+              <div class="service-card-inner">
+                <div class="service-front">
+                  <span class="service-number">05</span>
+                  <span class="service-explore">EXPLORE SERVICE ↗</span>
+                </div>
+
+                <div class="service-back">
+                  <span class="service-number">05</span>
+                  <h3>Video Editing & Motion Graphics</h3>
+                  <p>
+                    Producing professional video edits, animated graphics,
+                    promotional videos, and creative visual content that
+                    communicate your message effectively.
+                  </p>
+                  <span class="service-arrow">↗</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO SECTION -->
+      <section class="portfolio section" id="portfolio">
+        <div class="portfolio-container">
+          <div class="portfolio-heading">
+            <h2>PORTFOLIO<span>.</span></h2>
+
+            <p>
+              Explore my creative work, innovative designs and digital solutions
+              crafted to bring ideas to life and create meaningful experiences.
+            </p>
+          </div>
+
+          <div class="portfolio-categories">
+            <a href="brand-identity.html" class="portfolio-card">
+              <div class="portfolio-card-inner">
+                <span class="portfolio-number">01</span>
+                <h3>Brand Identity</h3>
+                <p>Explore 10 creative branding projects.</p>
+                <span class="portfolio-arrow">↗</span>
+              </div>
+            </a>
+
+            <a href="packaging.html" class="portfolio-card">
+              <div class="portfolio-card-inner">
+                <span class="portfolio-number">02</span>
+                <h3>Packaging</h3>
+                <p>Discover 10 unique packaging projects.</p>
+                <span class="portfolio-arrow">↗</span>
+              </div>
+            </a>
+
+            <a href="social-media.html" class="portfolio-card">
+              <div class="portfolio-card-inner">
+                <span class="portfolio-number">03</span>
+                <h3>Social Media</h3>
+                <p>Explore 10 engaging digital design projects.</p>
+                <span class="portfolio-arrow">↗</span>
+              </div>
+            </a>
+
+            <a href="websites.html" class="portfolio-card">
+              <div class="portfolio-card-inner">
+                <span class="portfolio-number">04</span>
+                <h3>Website / Software</h3>
+                <p>Discover 10 web and software projects.</p>
+                <span class="portfolio-arrow">↗</span>
+              </div>
+            </a>
+
+            <a href="video-motion.html" class="portfolio-card">
+              <div class="portfolio-card-inner">
+                <span class="portfolio-number">05</span>
+                <h3>Video & Motion</h3>
+                <p>Explore 10 video and motion projects.</p>
+                <span class="portfolio-arrow">↗</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FUTURE SECTIONS WILL BE ADDED HERE -->
+    </main>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="js/main.js?v=3"></script>
+  </body>
+</html>
